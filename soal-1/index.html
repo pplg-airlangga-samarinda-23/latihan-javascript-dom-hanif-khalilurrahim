@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Soal 3</title>
+    <title>Soal 1</title>
 </head>
 <body>
-    <p id="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi earum beatae officiis tenetur animi reprehenderit dolor. Soluta quos, architecto, porro itaque deserunt molestias laboriosam et tenetur sit eius praesentium voluptatum.</p>
+    <h1 id="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi earum beatae officiis tenetur animi reprehenderit dolor. Soluta quos, architecto, porro itaque deserunt molestias laboriosam et tenetur sit eius praesentium voluptatum.</h1>
 
     <button id="tombol">Tombol</button>
 
     <script>
         // tambahkan fungsi yang mengubah warna paragraf menjadi biru ketika tombol ditekan
+        document.getElementById("tombol").addEventListener("click", function() {
+        document.getElementById("paragraf").style.color = "blue";
+    });
     </script>
 </body>
 </html>

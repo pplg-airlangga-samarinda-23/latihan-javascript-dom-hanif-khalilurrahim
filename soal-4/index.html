@@ -28,6 +28,15 @@
         // berdasarkan nilai diameter yang dimasukkan.
         // Nilai volume akan muncul pada isian Volume setelah tombol
         // hitung ditekan.
+        document.getElementById("form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+        
+        var diameter = document.getElementById("diameter").value;
+        var radius = diameter / 2;
+        var volume = (4 / 3) * Math.PI * Math.pow(radius, 3); // Formula for volume of a sphere
+        
+        document.getElementById("volume").value = volume.toFixed(2); // Display the volume with 2 decimal places
+    });
     </script>
 </body>
 

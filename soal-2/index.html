@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Soal 1</title>
+    <title>Soal 2</title>
 </head>
 <body>
     <p id="teks">Rekayasa Perangkat Lunak</p>
@@ -11,7 +11,11 @@
         // tambahkan skrip javascript di sini
         // untuk mengubah ukuran dan warna dari teks
         // "Rekayasa Perangkat Lunak"
-
+        document.getElementById("tombol").addEventListener("click", function() {
+        var teksElement = document.getElementById("teks");
+        teksElement.style.fontSize = "50px"; // Change the text size
+        teksElement.style.color = "purple";     // Change the text color
+    });
         
     </script>
 </body>
